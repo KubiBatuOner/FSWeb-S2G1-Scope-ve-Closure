@@ -193,7 +193,7 @@ function skorTabelasi(periyotSkoru, takimSkoru, ceyrekSayisi) {
     
     let son = periyotSkoru(takimSkoru);
     
-    sonuc[i-1] =  i + ". Periyor: Ev Sahibi " + son.EvSahibi + " - Konuk Takım " + son.KonukTakim;
+    sonuc[i-1] =  i + ". Periyot: Ev Sahibi " + son.EvSahibi + " - Konuk Takım " + son.KonukTakim;
 
     finalEvSahibi += son.EvSahibi;
     finalKonukTakim += son.KonukTakim;
@@ -202,12 +202,12 @@ function skorTabelasi(periyotSkoru, takimSkoru, ceyrekSayisi) {
 
   while (finalEvSahibi === finalKonukTakim) {
     
-    uzatma = periyotSkoru(takimSkoru);
+    let uzatma = periyotSkoru(takimSkoru);
 
     finalEvSahibi += uzatma.EvSahibi;
     finalKonukTakim += uzatma.KonukTakim;
       
-    let string = i + ". Uzatma: Ev Sahibi " + uzatma.EvSahibi + " - Konuk Takım " + uzatma.KonukTakim;
+    let string = "1. Uzatma: Ev Sahibi " + uzatma.EvSahibi + " - Konuk Takım " + uzatma.KonukTakim;
 
     sonuc.push(string);
   
